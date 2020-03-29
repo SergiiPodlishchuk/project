@@ -1,0 +1,97 @@
+@media (max-width: 320px) {
+
+  .screen_1,
+  .screen_2,
+  .screen_3 {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .logo__link {
+    font-size: 30px;
+  }
+
+  .amet_list {
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .amet_list_item {
+    width: 300px;
+  }
+
+  .amet_list_item:nth-last-child(4) {
+    margin-bottom: 0;
+  }
+
+  .container {
+    max-width: 769px;
+    margin: 0 auto;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .navigation_list {
+    display: flex;
+  }
+
+  .Introducing-Mobileapp_title {
+    font-size: 42px;
+    line-height: 36px;
+  }
+
+  .Introducing-Mobileapp_about {
+    font-size: 22px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  .Introducing-Mobileapp_list_item {
+    font-size: 16px;
+  }
+
+  .key-features_title {
+    width: 400px;
+    font-size: 28px;
+  }
+
+  .key-features_about {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .screen_3 {
+    display: block;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .screen_1 {
+    width: 260px;
+    height: 550px;
+    top: 240px;
+    left: 910px;
+  }
+
+  .screen_2 {
+    width: 285px;
+    height: 600px;
+    top: 190px;
+    left: 965px;
+  }
+
+  .amet_list {
+    align-content: space-between;
+  }
+}

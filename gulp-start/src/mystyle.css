@@ -310,6 +310,17 @@ img {
   left: 515px;
 }
 
+.screen_3 {
+  width: 320px;
+  height: 660px;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+}
+
+
 /* KEY FEATURES */
 .key-features {
   position: relative;
@@ -443,15 +454,6 @@ img {
   text-align: left;
 }
 
-.screen_3 {
-  width: 320px;
-  height: 660px;
-  position: absolute;
-  top: 170px;
-  left: 50%;
-  transform: translate(-50%);
-  display: none;
-}
 
 
 

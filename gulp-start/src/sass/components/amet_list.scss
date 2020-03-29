@@ -1,0 +1,81 @@
+.amet_list {
+  margin: 0 auto;
+  padding: 0;
+  height: 500px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.amet_list_item {
+  width: 300px;
+  padding-left: 65px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.amet_list_item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+
+.amet_list_item::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.amet_list_item:nth-child(1)::before {
+  background-image: url(..//images/icon_board.svg);
+}
+
+.amet_list_item:nth-child(2)::before {
+  background-image: url(..//images/icon-hub.svg);
+}
+
+.amet_list_item:nth-child(3)::before {
+  background-image: url(..//images/icon-thumb.svg);
+}
+
+.amet_list_item:nth-child(4)::before {
+  background-image: url(..//images/icon-star.svg);
+}
+
+.amet_list_item:nth-child(5)::before {
+  background-image: url(..//images/icon-bell.svg);
+}
+
+.amet_list_item:nth-child(6)::before {
+  background-image: url(..//images/icon-share.svg);
+}
+
+
+.amet_list_item_title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(40, 37, 40);
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.amet_list_item_about {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: rgb(40, 37, 40);
+  line-height: 24px;
+  text-align: left;
+}

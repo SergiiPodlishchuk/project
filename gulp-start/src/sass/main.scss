@@ -1,6 +1,24 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-
+@import 'helpers/variables.scss';
+@import 'helpers/placeholders.scss';
+@import 'helpers/mixins.scss';
 @import 'normalize.scss';
 @import 'base.scss';
+
+// components
+
+// header
+@import 'components/background_image.scss';
+@import 'components/navigation.scss';
+
+
+@import 'components/Introducing_Mobileapp.scss';
+@import 'components/download_link.scss';
+@import 'components/smartphon_images.scss';
+
+// key features
+@import 'components/key_features.scss';
+@import 'components/amet_list.scss';
+@import 'components/media.scss';
