@@ -1,0 +1,554 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('./fonts/OpenSans-Regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/OpenSans-Regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-SemiBold'),
+    url('./fonts/OpenSans-SemiBold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/OpenSans-SemiBold.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-800 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-Bold'),
+    url('./fonts/OpenSans-Bold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/OpenSans-Bold.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'),
+    url('./fonts/Raleway-Regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/Raleway-Regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* raleway-700 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-SemiBold'),
+    url('./fonts/Raleway-SemiBold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/Raleway-SemiBold.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+/* raleway-900 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Raleway Black'), local('Raleway-Black'),
+    url('./fonts/Raleway-Bold.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./fonts/Raleway-Bold.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("./fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+  font-family: "MyriadProBoldItalic";
+  src: url("./fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+    font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProItalic"; */
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url("./fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+    font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("./fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+  font-family: "MyriadProSemiBold";
+
+  src: url("./fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+
+    font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+  font-family: "MyriadProSemiBoldItalic";
+  src: url("./fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
+    font-style: normal;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.bg_image {
+  padding-top: 20px;
+  background-image: url(./images/bg_image_header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 105px;
+  margin-bottom: 60px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 0 15px;
+  margin-bottom: 90px;
+}
+
+.logo__link {
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "Raleway";
+  color: rgb(26, 183, 152);
+  font-weight: bold;
+  line-height: 1.636;
+}
+
+.navigation_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 450px;
+  display: none;
+}
+
+
+.navigation__link {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: rgba(40, 37, 40, 0.6);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.769;
+}
+
+.navigation__link:hover {
+  color: #282528;
+}
+
+.Introducing-Mobileapp_title {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 7px;
+
+}
+
+.Introducing-Mobileapp_about {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.333;
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.Introducing-Mobileapp_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.Introducing-Mobileapp_list_item {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 36px;
+  text-align: left;
+}
+
+.Introducing-Mobileapp_list_item::before {
+  padding-right: 10px;
+  width: 20px;
+  content: "\003E";
+
+}
+
+.Introducing-Mobileapp_list_item:hover::before {
+  color: black;
+  padding-right: 10px;
+  width: 20px;
+  content: "\003E";
+}
+
+.download_link {
+  margin-left: 38px;
+  display: block;
+  width: 210px;
+  height: 50px;
+  text-decoration: none;
+  background-color: #1ab798;
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 50px;
+  border-radius: 5px;
+  padding-left: 75px;
+  position: relative;
+}
+
+.download_link::before {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 17px;
+  width: 40px;
+  height: 30px;
+  background-image: url(images/icon_cloud_download.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.screen_1 {
+  width: 175px;
+  height: 360px;
+  position: absolute;
+  z-index: 1;
+  top: 365px;
+  left: 460px;
+}
+
+.screen_2 {
+  width: 190px;
+  height: 405px;
+  position: absolute;
+  top: 340px;
+  left: 515px;
+}
+
+/* KEY FEATURES */
+.key-features {
+  position: relative;
+}
+
+.key-features_title {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 80px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(26, 183, 152);
+  font-weight: bold;
+  line-height: 2;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.key-features_title::before,
+.key-features_title::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgb(186, 189, 193);
+  position: absolute;
+}
+
+.key-features_title::before {
+  top: 50%;
+  left: 20px;
+}
+
+.key-features_title::after {
+  top: 50%;
+  right: 20px;
+}
+
+.key-features_about {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "MyriadProRegular";
+  color: rgb(40, 37, 40);
+  line-height: 1.625;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.amet_list {
+  margin: 0 auto;
+  padding: 0;
+  height: 500px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.amet_list_item {
+  width: 300px;
+  padding-left: 65px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.amet_list_item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+
+.amet_list_item::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.amet_list_item:nth-child(1)::before {
+  background-image: url(images/icon_board.svg);
+}
+
+.amet_list_item:nth-child(2)::before {
+  background-image: url(images/icon-hub.svg);
+}
+
+.amet_list_item:nth-child(3)::before {
+  background-image: url(images/icon-thumb.svg);
+}
+
+.amet_list_item:nth-child(4)::before {
+  background-image: url(images/icon-star.svg);
+}
+
+.amet_list_item:nth-child(5)::before {
+  background-image: url(images/icon-bell.svg);
+}
+
+.amet_list_item:nth-child(6)::before {
+  background-image: url(images/icon-share.svg);
+}
+
+
+.amet_list_item_title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(40, 37, 40);
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.amet_list_item_about {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: rgb(40, 37, 40);
+  line-height: 24px;
+  text-align: left;
+}
+
+.screen_3 {
+  width: 320px;
+  height: 660px;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+}
+
+
+
+@media (max-width: 320px) {
+
+  .screen_1,
+  .screen_2,
+  .screen_3 {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .logo__link {
+    font-size: 30px;
+  }
+
+  .amet_list {
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .amet_list_item {
+    width: 300px;
+  }
+
+  .amet_list_item:nth-last-child(4) {
+    margin-bottom: 0;
+  }
+
+  .container {
+    max-width: 769px;
+    margin: 0 auto;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .navigation_list {
+    display: flex;
+  }
+
+  .Introducing-Mobileapp_title {
+    font-size: 42px;
+    line-height: 36px;
+  }
+
+  .Introducing-Mobileapp_about {
+    font-size: 22px;
+    line-height: 36px;
+    width: 100%;
+  }
+
+  .Introducing-Mobileapp_list_item {
+    font-size: 16px;
+  }
+
+  .key-features_title {
+    width: 400px;
+    font-size: 28px;
+  }
+
+  .key-features_about {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .screen_3 {
+    display: block;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .screen_1 {
+    width: 260px;
+    height: 550px;
+    top: 240px;
+    left: 910px;
+  }
+
+  .screen_2 {
+    width: 285px;
+    height: 600px;
+    top: 190px;
+    left: 965px;
+  }
+
+  .amet_list {
+    align-content: space-between;
+  }
+}

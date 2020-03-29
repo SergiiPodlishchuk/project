@@ -1,0 +1,103 @@
+.FEATURES {
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: rgba(40, 37, 40, 0.6);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.769;
+  text-align: left;
+  position: absolute;
+  left: 791.828px;
+  top: 54.502px;
+  z-index: 25;
+}
+.arrow {
+  font-size: 32px;
+  font-family: "Pe-icon-7-stroke";
+  color: rgb(40, 37, 40);
+  text-transform: uppercase;
+  line-height: 1.125;
+  text-align: left;
+  position: absolute;
+  left: 2.875px;
+  top: 360px;
+  z-index: 16;
+}
+.burger {
+  background-image: url("burger.png");
+  position: absolute;
+  left: 277px;
+  top: 52px;
+  width: 28px;
+  height: 19px;
+  z-index: 7;
+}
+.Download {
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.8;
+  position: absolute;
+  left: 112.078px;
+  top: 421.5px;
+  z-index: 21;
+}
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="36px" height="24px">
+<image  x="0px" y="0px" width="36px" height="24px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAYCAQAAAA4sZfFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkAxoLLxlDJ0FTAAABUklEQVQ4y6WUwStEURSHfw8lSRamLGgoxcbCRqZGU7KwJBsWEv+BxSvLydLSyqzE0nomy7HC1kajKEk0hRpRZEafxVvMvJl377vG9zbvdU7fu+ec7hEyPn2sU+AbqHDJAav0mLNNgW62+aCZN3bp/YtomjtMPJB2FaX5xMYXCy6iBGXiqDAQLzqO1QAcmUUeSxR5dtLAD6NhkYckSSnta0qt7DS8Z0ORPW2FvhEiZWxv41/DPLWWlqRiLMEsgldOWMGri84svbCJAs4ZDERz1qbGi+CWBOrQmv7LmAryupSJCN3r0DLBDY00RWa0LKqRx/WN9zwbmZ8X74bKo1W+IbssSsYm+s4aqIqcZWa+owbKYt46ft9JA3khig4quwY2hRiK2UB+rOaazuDYk7zQPo8k6/tonIs2NVcMN+4jSZrVojKaUL/TxajpRiWdKqeaJP0Clq6lQokjFlQAAAAASUVORK5CYII=" />
+</svg>
+.KEY_FEATURES {
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(26, 183, 152);
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+  position: absolute;
+  left: 95.672px;
+  top: 617px;
+  z-index: 41;
+}
+.Nunc_vulputate_nibh_sed_congue_facilisis__Curab {
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(40, 37, 40);
+  line-height: 1.625;
+  text-align: center;
+  position: absolute;
+  left: 28.659px;
+  top: 702.546px;
+  width: 260px;
+  height: 120px;
+  z-index: 46;
+}
+.Amet_varius {
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(40, 37, 40);
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+  position: absolute;
+  left: 79.906px;
+  top: 831.5px;
+  z-index: 48;
+}
+.Donec_posuere_augue_venenatis__aliquet_ligula_u {
+  font-size: 13px;
+  font-family: "OpenSans";
+  color: rgb(40, 37, 40);
+  line-height: 1.846;
+  text-align: left;
+  position: absolute;
+  left: 79.937px;
+  top: 891.121px;
+  width: 206px;
+  height: 59px;
+  z-index: 47;
+}
+
+
