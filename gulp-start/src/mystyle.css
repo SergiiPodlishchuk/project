@@ -154,7 +154,7 @@ img {
   color: #282528;
 }
 
-.Introducing-Mobileapp_title {
+.introducing-mobileapp_title {
   margin: 0;
   padding: 0;
   font-size: 25px;
@@ -168,7 +168,7 @@ img {
 
 }
 
-.Introducing-Mobileapp_about {
+.introducing-mobileapp_about {
   margin: 0;
   padding: 0;
   width: 200px;
@@ -181,7 +181,7 @@ img {
   margin-bottom: 30px;
 }
 
-.Introducing-Mobileapp_list {
+.introducing-mobileapp_list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -189,7 +189,7 @@ img {
   margin-bottom: 30px;
 }
 
-.Introducing-Mobileapp_list_item {
+.introducing-mobileapp_list_item {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -199,14 +199,14 @@ img {
   text-align: left;
 }
 
-.Introducing-Mobileapp_list_item::before {
+.introducing-mobileapp_list_item::before {
   padding-right: 10px;
   width: 20px;
   content: "\003E";
 
 }
 
-.Introducing-Mobileapp_list_item:hover::before {
+.introducing-mobileapp_list_item:hover::before {
   color: black;
   padding-right: 10px;
   width: 20px;
@@ -274,6 +274,8 @@ img {
 /* KEY FEATURES */
 .key-features {
   position: relative;
+  margin-bottom: 60px;
+
 }
 
 .key-features_title {
@@ -404,6 +406,86 @@ img {
   text-align: left;
 }
 
+/* watch video */
+.bgcolor {
+  background-color: rgb(49, 212, 231);
+}
+
+.watch_video_title {
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.watch_video_about {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  font-family: "OpenSans";
+  color: rgb(255, 255, 255);
+  line-height: 1.625;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 550px;
+}
+
+.button_about {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 155px;
+  margin-bottom: 40px;
+
+}
+
+.button_about_item {
+  width: 70px;
+  height: 70px;
+  background-color: #0098cd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_video {
+  position: relative;
+}
+
+.pictures_video {
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.bgbutton {
+  width: 75px;
+  height: 45px;
+  background-color: rgba(84, 81, 76, 0.8);
+  border-radius: 5px;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.button_play {
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+
 @media (max-width: 320px) {
 
   .screen_1,
@@ -500,3 +582,5 @@ img {
     align-content: space-between;
   }
 }
+
+@media
